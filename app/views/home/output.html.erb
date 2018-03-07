@@ -1,0 +1,10 @@
+<h1>Output</h1>
+<% if @text.present? %>
+  <% @text.each_line do |line| %>
+    <p><%= line %></p>
+  <% end %>
+<% else %>
+  <h1>No output found.</h1>
+<% end %>
+<br><br>
+<a href="<%= root_path %>">Upload more</a>
