@@ -23,24 +23,17 @@ A step by step series of examples that tell you have to get a development env ru
 ```
 bundle gem first
 rails db:create
+rails db:migrate
 rails s
 ```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+rake test
 ```
 
 ## Deployment
-
-Add additional notes about how to deploy this on a live system.
 
 ```
 Deployed at heroku: https://rails5-assignment.herokuapp.com
@@ -49,10 +42,3 @@ Deployed at heroku: https://rails5-assignment.herokuapp.com
 ## Authors
 
 * **Prince Bansal** - *Initial work* - [Prince Bansal](https://github.com/erprincebansal)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
