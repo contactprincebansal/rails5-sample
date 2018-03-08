@@ -21,7 +21,7 @@ Install Postgresql : 10.0
 A step by step series of examples that tell you have to get a development env running
 
 ```
-bundle gem first
+bundle
 rails db:create
 rails db:migrate
 rails s
@@ -34,6 +34,15 @@ rake test
 ```
 
 ## Deployment
+
+Steps for deployment:
+
+```
+Create a heroku account.
+Login into account using heroku-cli.
+heroku create appname
+git push heroku master
+```
 
 ```
 Deployed at heroku: https://rails5-assignment.herokuapp.com
