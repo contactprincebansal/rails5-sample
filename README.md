@@ -1,14 +1,12 @@
 # Project Title
 
-Sample rails 5 application
+Rails Coding Assignment
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-
-What things you need to install the software and how to install them
 
 ```
 Install Ruby : 2.4.1
@@ -18,9 +16,8 @@ Install Postgresql : 10.0
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
 ```
+git clone https://github.com/erprincebansal/rails5-sample
 bundle
 rails db:create
 rails db:migrate
