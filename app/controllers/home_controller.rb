@@ -10,10 +10,13 @@ class HomeController < ApplicationController
       raise "Please input a valid file." unless home_params.present?
       file_name = "#{Time.now.to_i.to_s}.txt"
       crypto = Crypto.new
+      raise "No content found in file." if File.size(home_params.tempfile).zero?
+      text = home_params.tempfile.read
+      text.gsub!(/\r\n?/, "\n")
+      output_text = Gallery.new(text).run
       unless Dir.exists?(BASE_PATH)
         FileUtils.mkdir_p(BASE_PATH)
       end
-      output_text = improve_gallery
       File.open("#{BASE_PATH}/#{file_name}", 'w+') { |file| file.write(output_text) && file.close }
     rescue => exception
       message = exception.message
